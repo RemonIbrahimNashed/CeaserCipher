@@ -32,7 +32,7 @@ def decrypt(line,key):
 
 
 
-print("\n	Welcom to ceaser cipher algorthim\n")
+print("\n\t\tWelcom to ceaser cipher algorthim\n")
 print("Note in order for the program to work good you must enter large text file ")	
 filePath = input('Enter the path of the file to decrypt or "test.txt" to try on the test file: ')
 file = open(filePath,"r")
@@ -55,12 +55,12 @@ for line in lines :
 	cipherLines.append(cipherLine )
 
 # get freq of each letter in the plain text 
-plainText.lower()
+plainText = plainText.lower()
 plainTextCounter = Counter(plainText)
 plainDict = dict()
 
 # get freq of each letter in the chipher text
-cipherText.lower()
+cipherText = cipherText.lower()
 cipherTextCounter = Counter(cipherText)
 cipherDict = dict()
 
