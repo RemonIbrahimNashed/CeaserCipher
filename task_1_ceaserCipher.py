@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import string
 import operator
 
+#encryption function 
 def encrypt(line , key ):
 	line = line.upper()
 	alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -15,7 +16,7 @@ def encrypt(line , key ):
 		else:
 			result = result + letter
 	return result.lower()
-
+#decryption function 
 def decrypt(line,key):
 	line = line.upper()
 	alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
